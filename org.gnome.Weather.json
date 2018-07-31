@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.Weather",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.26",
+    "runtime-version": "3.28",
     "branch": "stable",
     "sdk": "org.gnome.Sdk",
     "command": "/app/share/org.gnome.Weather/org.gnome.Weather.Application",
@@ -32,19 +32,20 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/geocode-glib/3.25/geocode-glib-3.25.4.1.tar.xz",
-                    "sha256": "f10169262c313dfaa21acf00687c01e0aaf52983524648e8b9e8e42c052dd778"
+                    "url": "https://download.gnome.org/sources/geocode-glib/3.26/geocode-glib-3.26.0.tar.xz",
+                    "sha256": "ea4086b127050250c158beff28dbcdf81a797b3938bb79bbaaecc75e746fbeee"
                 }
             ]
         },
         {
             "name": "libgweather",
-            "config-opts": ["--disable-static", "--disable-vala"],
+            "buildsystem": "meson",
+            "config-opts": ["-Denable-vala=false"],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libgweather/3.26/libgweather-3.26.1.tar.xz",
-                    "sha256": "fca78470b345bce948e0333cab0a7c52c32562fc4a75de37061248a64e8fc4b8"
+                    "url": "https://download.gnome.org/sources/libgweather/3.28/libgweather-3.28.2.tar.xz",
+                    "sha256": "081ce81653afc614e12641c97a8dd9577c524528c63772407ae2dbcde12bde75"
                 }
             ]
         },
@@ -54,8 +55,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-desktop/3.26/gnome-desktop-3.26.0.tar.xz",
-                    "sha256": "8a99a084ea06fba20f5c547822dd8e36758676714729c7ae7b44ae3deca57be2"
+                    "url": "https://download.gnome.org/sources/gnome-desktop/3.28/gnome-desktop-3.28.2.tar.xz",
+                    "sha256": "605087bff17c61bc167ccb5a61ed4d06eab922fcce384576ed2a3577214c8330"
                 }
             ]
         },
