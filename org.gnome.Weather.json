@@ -4,7 +4,7 @@
     "runtime-version": "3.30",
     "branch": "stable",
     "sdk": "org.gnome.Sdk",
-    "command": "/app/share/org.gnome.Weather/org.gnome.Weather.Application",
+    "command": "gnome-weather",
     "finish-args": [
         "--share=ipc", "--socket=x11",
         "--socket=wayland",
@@ -25,8 +25,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/geocode-glib/3.26/geocode-glib-3.26.0.tar.xz",
-                    "sha256": "ea4086b127050250c158beff28dbcdf81a797b3938bb79bbaaecc75e746fbeee"
+                    "url": "https://download.gnome.org/sources/geocode-glib/3.26/geocode-glib-3.26.1.tar.xz",
+                    "sha256": "5baa6ab76a76c9fc567e4c32c3af2cd1d1784934c255bc5a62c512e6af6bde1c"
                 }
             ]
         },
@@ -37,29 +37,31 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libgweather/3.28/libgweather-3.28.2.tar.xz",
-                    "sha256": "081ce81653afc614e12641c97a8dd9577c524528c63772407ae2dbcde12bde75"
+                    "url": "https://download.gnome.org/sources/libgweather/3.32/libgweather-3.32.0.tar.xz",
+                    "sha256": "de9a2b392a8b27e012ed80bb9c950085692cd8e898c367c092df15f964a91d13"
                 }
             ]
         },
         {
             "name": "gnome-desktop",
-            "config-opts": ["--disable-debug-tools", "--disable-udev"],
+            "buildsystem": "meson",
+            "config-opts": ["-Ddebug-tools=false", "-Dudev=disabled"],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-desktop/3.30/gnome-desktop-3.30.2.tar.xz",
-                    "sha256": "5475e693cb7ada801a36e8d16bc0dbb58930b793f455419b205cd9241d63d14c"
+                    "url": "https://download.gnome.org/sources/gnome-desktop/3.32/gnome-desktop-3.32.0.tar.xz",
+                    "sha256": "a6393dc5fc29fc0652ac84c73b3da205d0b0168128c4cf6d27797a08f3d07b54"
                 }
             ]
         },
         {
             "name": "gnome-weather",
+            "buildsystem": "meson",
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-weather/3.26/gnome-weather-3.26.0.tar.xz",
-                    "sha256": "965cc0d1b4d4e53c06d494db96f0b124d232af5c0e731ca900edd10f77a74c78"
+                    "url": "https://download.gnome.org/sources/gnome-weather/3.32/gnome-weather-3.32.0.tar.xz",
+                    "sha256": "dc20070745cf084305ca842d584ae2f22ef025dc6831a02f04f565c747c3ec2c"
                 }
             ]
         }
