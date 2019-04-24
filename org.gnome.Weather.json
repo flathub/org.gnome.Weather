@@ -49,8 +49,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-desktop/3.32/gnome-desktop-3.32.0.tar.xz",
-                    "sha256": "a6393dc5fc29fc0652ac84c73b3da205d0b0168128c4cf6d27797a08f3d07b54"
+                    "url": "https://download.gnome.org/sources/gnome-desktop/3.32/gnome-desktop-3.32.1.2.tar.xz",
+                    "sha256": "77d8cdc30ac69393ecb3ca702e57e79127b673bda124905372496d5367456499"
                 }
             ]
         },
@@ -60,8 +60,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-weather/3.32/gnome-weather-3.32.0.tar.xz",
-                    "sha256": "dc20070745cf084305ca842d584ae2f22ef025dc6831a02f04f565c747c3ec2c"
+                    "url": "https://download.gnome.org/sources/gnome-weather/3.32/gnome-weather-3.32.2.tar.xz",
+                    "sha256": "1a25c325033a134f291481bb4aa00b5c9af6555daf5bc311e963e629976bdd49"
                 }
             ]
         }
