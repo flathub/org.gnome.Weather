@@ -1,12 +1,12 @@
 {
     "app-id": "org.gnome.Weather",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.34",
+    "runtime-version": "3.36",
     "branch": "stable",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-weather",
     "finish-args": [
-        "--share=ipc", "--socket=x11",
+        "--share=ipc", "--socket=fallback-x11",
         "--socket=wayland",
         "--share=network",
         "--system-talk-name=org.freedesktop.GeoClue2",
