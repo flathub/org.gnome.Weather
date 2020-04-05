@@ -1,12 +1,12 @@
 {
     "app-id": "org.gnome.Weather",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.34",
+    "runtime-version": "3.36",
     "branch": "stable",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-weather",
     "finish-args": [
-        "--share=ipc", "--socket=x11",
+        "--share=ipc", "--socket=fallback-x11",
         "--socket=wayland",
         "--share=network",
         "--system-talk-name=org.freedesktop.GeoClue2",
@@ -21,11 +21,12 @@
         {
             "name": "geocode-glib",
             "buildsystem": "meson",
+            "config-opts": ["-Denable-gtk-doc=false"],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/geocode-glib/3.26/geocode-glib-3.26.1.tar.xz",
-                    "sha256": "5baa6ab76a76c9fc567e4c32c3af2cd1d1784934c255bc5a62c512e6af6bde1c"
+                    "url": "https://download.gnome.org/sources/geocode-glib/3.26/geocode-glib-3.26.2.tar.xz",
+                    "sha256": "01fe84cfa0be50c6e401147a2bc5e2f1574326e2293b55c69879be3e82030fd1"
                 }
             ]
         },
@@ -37,7 +38,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/libgweather.git",
-                    "commit": "e93a119cb218b9c5f0f16fde54f7389d41f31ee1"
+                    "commit": "89b2cc13d258f97405c61d1ec2e2930ef7dc1b23",
+                    "tag": "3.36.0"
                 }
             ]
         },
@@ -48,8 +50,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-desktop/3.34/gnome-desktop-3.34.0.tar.xz",
-                    "sha256": "8d331ee655c1d56b2b97562a07c7a7598ff6706a11ff1cdce97423ebc6b62426"
+                    "url": "https://download.gnome.org/sources/gnome-desktop/3.36/gnome-desktop-3.36.1.tar.xz",
+                    "sha256": "8c6fe59e567f134e4f6508d968d5d09cbe12382d18af9a11a4f51ada6c80a880"
                 }
             ]
         },
@@ -59,8 +61,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-weather/3.34/gnome-weather-3.34.0.tar.xz",
-                    "sha256": "24867e21fcb92b81cd0cf09bbf8bc216ccc55d9a66ac21928b66c413f4efc3bc"
+                    "url": "https://download.gnome.org/sources/gnome-weather/3.34/gnome-weather-3.34.1.tar.xz",
+                    "sha256": "e75aae876a0312054e96b393841b03e65ab8376e77a0aca7ae468e42ce0e46a0"
                 }
             ]
         }
