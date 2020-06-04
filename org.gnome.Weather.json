@@ -61,8 +61,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-weather/3.34/gnome-weather-3.34.1.tar.xz",
-                    "sha256": "e75aae876a0312054e96b393841b03e65ab8376e77a0aca7ae468e42ce0e46a0"
+                    "url": "https://download.gnome.org/sources/gnome-weather/3.36/gnome-weather-3.36.1.tar.xz",
+                    "sha256": "68e6e646159f31c4525c3a5dd308fc0b88dcfc79b61351e9e930dd6efc2ce787"
                 }
             ]
         }
