@@ -2,7 +2,6 @@
     "app-id": "org.gnome.Weather",
     "runtime": "org.gnome.Platform",
     "runtime-version": "3.36",
-    "branch": "stable",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-weather",
     "finish-args": [
@@ -36,10 +35,9 @@
             "config-opts": ["-Denable-vala=false"],
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://gitlab.gnome.org/GNOME/libgweather.git",
-                    "commit": "89b2cc13d258f97405c61d1ec2e2930ef7dc1b23",
-                    "tag": "3.36.0"
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/libgweather/3.36/libgweather-3.36.0.tar.xz",
+                    "sha256": "d2ffeec01788d03d1bbf35113fc2f054c6c3600721088f827bcc31e5c603a32d"
                 }
             ]
         },
@@ -50,8 +48,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-desktop/3.36/gnome-desktop-3.36.1.tar.xz",
-                    "sha256": "8c6fe59e567f134e4f6508d968d5d09cbe12382d18af9a11a4f51ada6c80a880"
+                    "url": "https://download.gnome.org/sources/gnome-desktop/3.36/gnome-desktop-3.36.2.tar.xz",
+                    "sha256": "38f994dcb1e1ae093d1c929c7acc4f88e39111e43b5fdc13125b0f6e2311c789"
                 }
             ]
         },
