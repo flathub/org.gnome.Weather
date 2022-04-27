@@ -12,16 +12,25 @@
         "--share=network",
         "--metadata=X-DConf=migrate-path=/org/gnome/Weather/"
     ],
-    "cleanup": ["/include", "/lib/pkgconfig",
-                "/share/pkgconfig", "/share/aclocal",
-                "/man", "/share/man", "/share/gtk-doc",
-                "/share/vala",
-                "*.la", "*.a"],
+    "cleanup": [
+        "/include",
+        "/lib/pkgconfig",
+        "/share/pkgconfig",
+        "/share/aclocal",
+        "/man",
+        "/share/man",
+        "/share/gtk-doc",
+        "/share/vala",
+        "*.la",
+        "*.a"
+    ],
     "modules": [
         {
             "name": "geocode-glib",
             "buildsystem": "meson",
-            "config-opts": ["-Denable-gtk-doc=false"],
+            "config-opts": [
+                "-Denable-gtk-doc=false"
+            ],
             "sources": [
                 {
                     "type": "archive",
@@ -60,12 +69,15 @@
         {
             "name": "gnome-desktop",
             "buildsystem": "meson",
-            "config-opts": ["-Ddebug-tools=false", "-Dudev=disabled"],
+            "config-opts": [
+                "-Ddebug-tools=false",
+                "-Dudev=disabled"
+            ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-desktop/42/gnome-desktop-42.0.tar.xz",
-                    "sha256": "f3caa293a5e86f6ccad18f817273db1c67061e680d79d839aa8a7528e5bb26d6",
+                    "url": "https://download.gnome.org/sources/gnome-desktop/42/gnome-desktop-42.1.tar.xz",
+                    "sha256": "2433ab606d244c3524de5b812094db8a670fb11ed9ff7180c2d021ae1fc9fc05",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-desktop"
