@@ -12,21 +12,30 @@
         "--share=network",
         "--metadata=X-DConf=migrate-path=/org/gnome/Weather/"
     ],
-    "cleanup": ["/include", "/lib/pkgconfig",
-                "/share/pkgconfig", "/share/aclocal",
-                "/man", "/share/man", "/share/gtk-doc",
-                "/share/vala",
-                "*.la", "*.a"],
+    "cleanup": [
+        "/include",
+        "/lib/pkgconfig",
+        "/share/pkgconfig",
+        "/share/aclocal",
+        "/man",
+        "/share/man",
+        "/share/gtk-doc",
+        "/share/vala",
+        "*.la",
+        "*.a"
+    ],
     "modules": [
         {
             "name": "geocode-glib",
             "buildsystem": "meson",
-            "config-opts": ["-Denable-gtk-doc=false"],
+            "config-opts": [
+                "-Denable-gtk-doc=false"
+            ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/geocode-glib/3.26/geocode-glib-3.26.2.tar.xz",
-                    "sha256": "01fe84cfa0be50c6e401147a2bc5e2f1574326e2293b55c69879be3e82030fd1",
+                    "url": "https://download.gnome.org/sources/geocode-glib/3.26/geocode-glib-3.26.3.tar.xz",
+                    "sha256": "1dfeae83b90eccca1b6cf7dcf7c5e3b317828cf0b56205c4471ef0f911999766",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "geocode-glib"
@@ -60,12 +69,15 @@
         {
             "name": "gnome-desktop",
             "buildsystem": "meson",
-            "config-opts": ["-Ddebug-tools=false", "-Dudev=disabled"],
+            "config-opts": [
+                "-Ddebug-tools=false",
+                "-Dudev=disabled"
+            ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-desktop/42/gnome-desktop-42.0.tar.xz",
-                    "sha256": "f3caa293a5e86f6ccad18f817273db1c67061e680d79d839aa8a7528e5bb26d6",
+                    "url": "https://download.gnome.org/sources/gnome-desktop/42/gnome-desktop-42.3.tar.xz",
+                    "sha256": "da50410b8f19fd7e775b00d1fe0dba67fc5e1151ded299158dc25ddadc3fa8a9",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-desktop"
