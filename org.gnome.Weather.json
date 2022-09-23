@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.Weather",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "42",
+    "runtime-version": "43",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-weather",
     "finish-args": [
@@ -21,12 +21,16 @@
         {
             "name": "geocode-glib",
             "buildsystem": "meson",
-            "config-opts": ["-Denable-gtk-doc=false"],
+            "config-opts": [
+                "-Denable-installed-tests=false",
+                "-Denable-gtk-doc=false",
+                "-Dsoup2=false"
+            ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/geocode-glib/3.26/geocode-glib-3.26.2.tar.xz",
-                    "sha256": "01fe84cfa0be50c6e401147a2bc5e2f1574326e2293b55c69879be3e82030fd1",
+                    "url": "https://download.gnome.org/sources/geocode-glib/3.26/geocode-glib-3.26.4.tar.xz",
+                    "sha256": "2d9a6826d158470449a173871221596da0f83ebdcff98b90c7049089056a37aa",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "geocode-glib"
@@ -39,13 +43,14 @@
             "buildsystem": "meson",
             "config-opts": [
                 "-Denable_vala=false",
-                "-Dgtk_doc=false"
+                "-Dgtk_doc=false",
+                "-Dsoup2=false"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libgweather/4.0/libgweather-4.0.0.tar.xz",
-                    "sha256": "440d44801b6f72b48c676e5e37f9109cfee1394fd74cc92725e1b1ba4fae834c",
+                    "url": "https://download.gnome.org/sources/libgweather/4.2/libgweather-4.2.0.tar.xz",
+                    "sha256": "af8a812da0d8976a000e1d62572c256086a817323fbf35b066dbfdd8d2ca6203",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "libgweather",
@@ -60,12 +65,12 @@
         {
             "name": "gnome-desktop",
             "buildsystem": "meson",
-            "config-opts": ["-Ddebug-tools=false", "-Dudev=disabled"],
+            "config-opts": ["-Ddebug_tools=false", "-Dudev=disabled"],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-desktop/42/gnome-desktop-42.0.tar.xz",
-                    "sha256": "f3caa293a5e86f6ccad18f817273db1c67061e680d79d839aa8a7528e5bb26d6",
+                    "url": "https://download.gnome.org/sources/gnome-desktop/43/gnome-desktop-43.tar.xz",
+                "sha256": "3d6e153317486157596aa3802f87676414c570738f450a94a041fe8835420a69",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-desktop"
@@ -79,8 +84,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-weather/42/gnome-weather-42.0.tar.xz",
-                    "sha256": "579ee691d853e5bb3ff50e8c7b43f85ae9dd7e5b3a649e02c254a2d9b807b465",
+                    "url": "https://download.gnome.org/sources/gnome-weather/43/gnome-weather-43.0.tar.xz",
+                    "sha256": "2f11117f75552bf1bb9e01f01cfb3c2fcda6a3f69070ffe0519a0761532b8f26",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-weather"
