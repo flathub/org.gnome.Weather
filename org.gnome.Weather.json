@@ -70,7 +70,7 @@
                 {
                     "type": "archive",
                     "url": "https://download.gnome.org/sources/gnome-desktop/43/gnome-desktop-43.tar.xz",
-                "sha256": "3d6e153317486157596aa3802f87676414c570738f450a94a041fe8835420a69",
+                    "sha256": "3d6e153317486157596aa3802f87676414c570738f450a94a041fe8835420a69",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-desktop"
@@ -88,6 +88,7 @@
                     "sha256": "2f11117f75552bf1bb9e01f01cfb3c2fcda6a3f69070ffe0519a0761532b8f26",
                     "x-checker-data": {
                         "type": "gnome",
+                        "is-important": true,
                         "name": "gnome-weather"
                     }
                 }
