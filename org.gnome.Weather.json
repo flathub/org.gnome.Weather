@@ -1,5 +1,5 @@
 {
-    "app-id": "org.gnome.Weather",
+    "id": "org.gnome.Weather",
     "runtime": "org.gnome.Platform",
     "runtime-version": "43",
     "sdk": "org.gnome.Sdk",
