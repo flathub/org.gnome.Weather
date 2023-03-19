@@ -12,11 +12,18 @@
         "--share=network",
         "--metadata=X-DConf=migrate-path=/org/gnome/Weather/"
     ],
-    "cleanup": ["/include", "/lib/pkgconfig",
-                "/share/pkgconfig", "/share/aclocal",
-                "/man", "/share/man", "/share/gtk-doc",
-                "/share/vala",
-                "*.la", "*.a"],
+    "cleanup": [
+        "/include",
+        "/lib/pkgconfig",
+        "/share/pkgconfig",
+        "/share/aclocal",
+        "/man",
+        "/share/man",
+        "/share/gtk-doc",
+        "/share/vala",
+        "*.la",
+        "*.a"
+    ],
     "modules": [
         {
             "name": "geocode-glib",
@@ -65,12 +72,15 @@
         {
             "name": "gnome-desktop",
             "buildsystem": "meson",
-            "config-opts": ["-Ddebug_tools=false", "-Dudev=disabled"],
+            "config-opts": [
+                "-Ddebug_tools=false",
+                "-Dudev=disabled"
+            ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-desktop/43/gnome-desktop-43.tar.xz",
-                    "sha256": "3d6e153317486157596aa3802f87676414c570738f450a94a041fe8835420a69",
+                    "url": "https://download.gnome.org/sources/gnome-desktop/43/gnome-desktop-43.2.tar.xz",
+                    "sha256": "a0b9ab20d28a63df6ce7e91eabb5e3af86630bf522b5a8997c04971bd551d730",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-desktop"
@@ -84,8 +94,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-weather/43/gnome-weather-43.0.tar.xz",
-                    "sha256": "2f11117f75552bf1bb9e01f01cfb3c2fcda6a3f69070ffe0519a0761532b8f26",
+                    "url": "https://download.gnome.org/sources/gnome-weather/44/gnome-weather-44.0.tar.xz",
+                    "sha256": "6b0d38ac785041699df628926e35db7b5ffa086ee0d6934c222a19c6b9923baf",
                     "x-checker-data": {
                         "type": "gnome",
                         "is-important": true,
