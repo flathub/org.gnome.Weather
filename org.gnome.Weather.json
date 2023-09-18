@@ -56,8 +56,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libgweather/4.2/libgweather-4.2.0.tar.xz",
-                    "sha256": "af8a812da0d8976a000e1d62572c256086a817323fbf35b066dbfdd8d2ca6203",
+                    "url": "https://download.gnome.org/sources/libgweather/4.4/libgweather-4.4.0.tar.xz",
+                    "sha256": "366e866ff2a708b894cfea9475b8e8ff54cb3e2b477ea72a8ade0dabee5f48a4",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "libgweather",
@@ -94,8 +94,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-weather/44/gnome-weather-44.0.tar.xz",
-                    "sha256": "6b0d38ac785041699df628926e35db7b5ffa086ee0d6934c222a19c6b9923baf",
+                    "url": "https://download.gnome.org/sources/gnome-weather/45/gnome-weather-45.0.tar.xz",
+                    "sha256": "30c0029702883dc8d8160e6de1d6116877cd6c25bc950d4e4902a6ab467b2fa4",
                     "x-checker-data": {
                         "type": "gnome",
                         "is-important": true,
