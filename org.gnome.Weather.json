@@ -1,7 +1,7 @@
 {
     "id": "org.gnome.Weather",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "47",
+    "runtime-version": "48",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-weather",
     "finish-args": [
@@ -94,8 +94,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-weather/47/gnome-weather-47.0.tar.xz",
-                    "sha256": "515f5862374dd346cbc85a9ddf0306b2d327657850bb60b6c9c9860fce9620e6",
+                    "url": "https://download.gnome.org/sources/gnome-weather/48/gnome-weather-48.0.tar.xz",
+                    "sha256": "4c0569b3d815ae2f9416d47134cbd3056340640ff186d31a94c865813b4bdbb5",
                     "x-checker-data": {
                         "type": "gnome",
                         "is-important": true,
