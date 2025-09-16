@@ -1,8 +1,12 @@
 {
     "id": "org.gnome.Weather",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "48",
+    "runtime-version": "49",
     "sdk": "org.gnome.Sdk",
+    "sdk-extensions": [
+        "org.freedesktop.Sdk.Extension.node24",
+        "org.freedesktop.Sdk.Extension.typescript"
+    ],
     "command": "gnome-weather",
     "finish-args": [
         "--device=dri",
@@ -24,6 +28,9 @@
         "*.la",
         "*.a"
     ],
+    "build-options" : {
+        "append-path" : "/usr/lib/sdk/node24/bin:/usr/lib/sdk/typescript/bin"
+    },
     "modules": [
         {
             "name": "geocode-glib",
@@ -51,6 +58,7 @@
             "config-opts": [
                 "-Denable_vala=false",
                 "-Dgtk_doc=false",
+                "-Dtests=false",
                 "-Dsoup2=false"
             ],
             "sources": [
@@ -79,8 +87,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-desktop/44/gnome-desktop-44.1.tar.xz",
-                    "sha256": "ae7ca55dc9e08914999741523a17d29ce223915626bd2462a120bf96f47a79ab",
+                    "url": "https://download.gnome.org/sources/gnome-desktop/44/gnome-desktop-44.4.tar.xz",
+                    "sha256": "1d8cb9c6a328eb689b0c1269cf53834cc84d851d7e71970cdabba82706b44984",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-desktop"
@@ -94,8 +102,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-weather/48/gnome-weather-48.0.tar.xz",
-                    "sha256": "4c0569b3d815ae2f9416d47134cbd3056340640ff186d31a94c865813b4bdbb5",
+                    "url": "https://download.gnome.org/sources/gnome-weather/49/gnome-weather-49.0.tar.xz",
+                    "sha256": "ee1f76b85eba9db0c8d5c02041a9d85ecdd22abb5ec6bb3ff32225929c0fce5f",
                     "x-checker-data": {
                         "type": "gnome",
                         "is-important": true,
