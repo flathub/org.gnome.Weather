@@ -28,8 +28,8 @@
         "*.la",
         "*.a"
     ],
-    "build-options" : {
-        "append-path" : "/usr/lib/sdk/node24/bin:/usr/lib/sdk/typescript/bin"
+    "build-options": {
+        "append-path": "/usr/lib/sdk/node24/bin:/usr/lib/sdk/typescript/bin"
     },
     "modules": [
         {
