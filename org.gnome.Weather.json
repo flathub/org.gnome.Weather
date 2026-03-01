@@ -79,25 +79,6 @@
             ]
         },
         {
-            "name": "gnome-desktop",
-            "buildsystem": "meson",
-            "config-opts": [
-                "-Ddebug_tools=false",
-                "-Dudev=disabled"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-desktop/44/gnome-desktop-44.4.tar.xz",
-                    "sha256": "1d8cb9c6a328eb689b0c1269cf53834cc84d851d7e71970cdabba82706b44984",
-                    "x-checker-data": {
-                        "type": "gnome",
-                        "name": "gnome-desktop"
-                    }
-                }
-            ]
-        },
-        {
             "name": "gnome-weather",
             "buildsystem": "meson",
             "sources": [
