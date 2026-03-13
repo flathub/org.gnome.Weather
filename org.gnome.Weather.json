@@ -28,8 +28,8 @@
         "*.la",
         "*.a"
     ],
-    "build-options" : {
-        "append-path" : "/usr/lib/sdk/node24/bin:/usr/lib/sdk/typescript/bin"
+    "build-options": {
+        "append-path": "/usr/lib/sdk/node24/bin:/usr/lib/sdk/typescript/bin"
     },
     "modules": [
         {
@@ -84,8 +84,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-weather/49/gnome-weather-49.0.tar.xz",
-                    "sha256": "ee1f76b85eba9db0c8d5c02041a9d85ecdd22abb5ec6bb3ff32225929c0fce5f",
+                    "url": "https://download.gnome.org/sources/gnome-weather/50/gnome-weather-50.0.tar.xz",
+                    "sha256": "57de7578605f91f9ab400551ce7738db7505bc88f42a33c70ce7a70167fdb513",
                     "x-checker-data": {
                         "type": "gnome",
                         "is-important": true,
