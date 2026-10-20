@@ -1,10 +1,10 @@
 {
     "id": "org.gnome.Weather",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "50",
+    "runtime-version": "51",
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": [
-        "org.freedesktop.Sdk.Extension.node24",
+        "org.freedesktop.Sdk.Extension.node26",
         "org.freedesktop.Sdk.Extension.typescript"
     ],
     "command": "gnome-weather",
@@ -29,7 +29,7 @@
         "*.a"
     ],
     "build-options": {
-        "append-path": "/usr/lib/sdk/node24/bin:/usr/lib/sdk/typescript/bin"
+        "append-path": "/usr/lib/sdk/node26/bin:/usr/lib/sdk/typescript/bin"
     },
     "modules": [
         {
